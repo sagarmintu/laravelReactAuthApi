@@ -10,8 +10,9 @@ const Navbar = () => {
             <Typography variant="h5" component="div" sx={{flexGrow:1}}>
               React Dashboard
             </Typography>
-            <Button component={NavLink} to='/' sx={{color:'white'}} style={({ isActive }) =>{ return { backgroundColor:  isActive ?'#1890ff' : '' } }}>Home</Button>
-            <Button component={NavLink} to='/contact' sx={{color:'white'}} style={({ isActive }) =>{ return { backgroundColor:  isActive ?'#1890ff' : '' } }}>Contact</Button>
+            <Button component={NavLink} to='/' sx={{color:'white', textTransform:'none'}} style={({ isActive }) =>{ return { backgroundColor:  isActive ?'#1890ff' : '' } }}>Home</Button>
+            <Button component={NavLink} to='/contact' sx={{color:'white', textTransform:'none'}} style={({ isActive }) =>{ return { backgroundColor:  isActive ?'#1890ff' : '' } }}>Contact</Button>
+            <Button component={NavLink} to='/login' sx={{color:'white', textTransform:'none'}} style={({ isActive }) =>{ return { backgroundColor:  isActive ?'#1890ff' : '' } }}>Login/Registration</Button>
           </Toolbar>
         </AppBar>
       </Box>
