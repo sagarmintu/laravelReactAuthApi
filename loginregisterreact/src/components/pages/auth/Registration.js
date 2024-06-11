@@ -30,7 +30,7 @@ const Registration = () => {
                 console.log(actualData);
                 document.getElementById('register-form').reset();
                 setError({status: true, msg: 'Register Success', type:'success'});
-                navigate('/');
+                navigate('/dashboard');
             }
             else
             {
@@ -99,7 +99,7 @@ const Registration = () => {
             variant="contained"
             sx={{ mt: 3, mb: 2, px: 5 }}
           >
-            Register
+            Join
           </Button>
         </Box>
         {error.status ? <Alert severity={error.type}>{error.msg}</Alert> : ""}
